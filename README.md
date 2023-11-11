@@ -24,6 +24,22 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
   2. AWS SES(simple email service)
   3. Stripe payment API
 
+# Installation
+  Install Node.js:
+  Make sure you have Node.js installed as it's required to run a Node.js server and use npm (Node Package Manager).
+
+  Install MongoDB:
+  As the project uses MongoDB, ensure you have MongoDB installed and running on your machine or use a MongoDB cloud service.
+
+  Set up environment variables:
+  You may need to set up environment variables such as database connection strings, API keys for AWS SES, Stripe, and any other services the application uses.
+
+  Install dependencies:
+  `cd backend`
+  `npm install`
+  `cd frontend`
+  `npm install`
+
 
 # User Story
 As a general User:
