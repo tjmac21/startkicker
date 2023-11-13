@@ -28,7 +28,7 @@ class CheckoutForm extends React.Component {
         })
       })
       .catch(err => {
-        process.env.MODE=='dev'&&console.log(err);
+        process.env.NODE_ENV=='dev'&&console.log(err);
       })
   }
 

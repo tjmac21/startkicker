@@ -7,7 +7,7 @@ const app = express();
 
 //env setup
 require('dotenv').config();
-const PORT = process.env.PORT;
+const PORT = "8080";
 const routes = require('./routes');
 const stripe = require('stripe')(`${process.env.STRIPE_KEY}`);
 
@@ -20,10 +20,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 //-----Routes----//
-app.get('/', (req, res) => {
-  res.send('Hello world')
-})
-
+// app.get('/', (req, res) => {
+//   res.send('Hello world')
+// })
+app.use('/', express.static('../docs'));
 
 app.use('/api/v1/auth', routes.auth);
 app.use('/api/v1/pay', routes.pay);
@@ -37,4 +37,5 @@ app.use('/api/v1/user', routes.user);
 
 app.listen(PORT, () => {
   console.log(`Server connected at http://localhost:${PORT}`)
+  console.log(`Environment: ${process.env.JWT_SECRET} ${process.env.MONGODB_URI} ${process.env.STRIPE_KEY}`)
 });

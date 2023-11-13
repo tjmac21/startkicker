@@ -25,20 +25,29 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
   3. Stripe payment API
 
 # Installation
-  Install Node.js:
+  1. Install Node.js:
   Make sure you have Node.js installed as it's required to run a Node.js server and use npm (Node Package Manager).
 
-  Install MongoDB:
+  2. Install MongoDB:
   As the project uses MongoDB, ensure you have MongoDB installed and running on your machine or use a MongoDB cloud service.
 
-  Set up environment variables:
+  3. Set up environment variables:
   You may need to set up environment variables such as database connection strings, API keys for AWS SES, Stripe, and any other services the application uses.
 
-  Install dependencies:
+  4. Install dependencies:
   `cd backend`
   `npm install`
   `cd frontend`
   `npm install`
+
+  5. Example frontend .env file:
+    `REACT_APP_API_URL="http://localhost:8080/api/v1"
+    NODE_ENV="dev"`
+  Example backend .env file:
+    `STRIPE_KEY=""
+    JWT_SECRET="a"
+    NODE_ENV="dev"
+    MONGODB_URI="mongodb://localhost:27017"`
 
 
 # User Story

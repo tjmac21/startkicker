@@ -7,7 +7,7 @@ const Footer = props => {
     <div>
       <div className="footer">
       <div className="content">
-        made with love by amazingshellyyy
+        Publique Records
       </div>
       </div>
     </div>
