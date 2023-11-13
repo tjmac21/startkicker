@@ -41,12 +41,12 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
   `npm install`
 
   5. Example frontend .env file:
-    `REACT_APP_API_URL="http://localhost:8080/api/v1"
+    `REACT_APP_API_URL="http://localhost:8080/api/v1"\
     NODE_ENV="dev"`
   Example backend .env file:
-    `STRIPE_KEY=""
-    JWT_SECRET="a"
-    NODE_ENV="dev"
+    `STRIPE_KEY=""\
+    JWT_SECRET="a"\
+    NODE_ENV="dev"\
     MONGODB_URI="mongodb://localhost:27017"`
 
 
